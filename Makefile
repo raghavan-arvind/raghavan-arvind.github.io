@@ -6,6 +6,8 @@ build:
 
 serve:
 	bundle exec jekyll serve
+	cp -f src/CNAME docs/
 
 clean:
 	rm -rf docs/
+	git co docs/
