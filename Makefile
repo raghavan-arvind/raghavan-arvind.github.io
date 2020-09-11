@@ -1,8 +1,10 @@
 .PHONY: build serve clean
 
-build:
+deploy:
 	bundle exec jekyll build
 	cp -f src/CNAME docs/
+	git add docs/
+	git commit -m "Deploy: " --edit
 
 serve:
 	bundle exec jekyll serve
