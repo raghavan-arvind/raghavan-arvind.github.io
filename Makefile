@@ -4,7 +4,7 @@ deploy:
 	bundle exec jekyll build
 	cp -f src/CNAME docs/
 	git add docs/
-	git commit -m "Deploy: " --edit
+	git commit -m "Deploy"
 
 serve:
 	bundle exec jekyll serve
